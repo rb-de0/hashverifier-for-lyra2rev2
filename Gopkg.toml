@@ -1,0 +1,12 @@
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/aead/skein"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/dchest/blake256"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/rb-de0/lyra2rev2"
