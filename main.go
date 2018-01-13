@@ -17,10 +17,10 @@ type HashCalculator = func([]byte) []byte
 func main() {
 
 	defer func() {
-        if r := recover(); r != nil {
+		if r := recover(); r != nil {
 			fmt.Println("Recover Panic Error:", r)
-        }
-    }()
+		}
+	}()
 
 	hashCalculators := map[string]HashCalculator{}
 
