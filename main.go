@@ -25,7 +25,9 @@ func main() {
 	hashCalculators := map[string]HashCalculator{}
 
 	hashCalculators["lyra2rev2"] = func(input []byte) []byte {
-		result, err := lyra2rev2.Sum(input)
+		data := make([]byte, 80)
+		copy(data, input)
+		result, err := lyra2rev2.Sum(data)
 		if err != nil {
 			panic(err)
 		}
